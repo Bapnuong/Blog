@@ -1,30 +1,107 @@
 <!DOCTYPE html>
-<html lang="vn">
-  <!--phần đầu-->
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <title>Shop source web</title>
+    <title>BapCode Blog - Trang chủ</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <!--phần thân-->
   <body>
-    <h1>Welcome to the Shop</h1>
-    <p>Explore our products and find what you love!</p>
+    <!-- Header -->
+    <header>
+      <div class="logo">BapCode Blog</div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Trang chủ</a></li>
+          <li><a href="baiviet.html">Bài viết</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="lienhe.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- Add your shop content here -->
-    <div class="products">
-      <h2>Featured Products</h2>
-      <ul>
-        <li>Product 1</li>
-        <li>Product 2</li>
-        <li>Product 3</li>
-      </ul>
-    </div>
+    <!-- Banner -->
+    <section class="hero">
+      <h1>Chào mừng đến với BapCode Blog 🚀</h1>
+      <p>Chia sẻ kiến thức Lập trình • Game Dev • AI • Dự án cá nhân</p>
+      <a href="baiviet.html" class="btn">Khám phá ngay</a>
+    </section>
 
-    <!-- Footer section -->
+    <!-- Main layout -->
+    <main>
+      <!-- Danh sách bài viết -->
+      <section class="posts">
+        <h2>Bài viết mới nhất</h2>
+        <div class="post-list">
+          <article class="post-card">
+            <img src="https://placehold.co/300x180" alt="thumbnail" />
+            <h3><a href="#">Cách học Lập trình Web hiệu quả</a></h3>
+            <p>Tips và roadmap để bắt đầu làm web nhanh chóng...</p>
+            <a href="#" class="read-more">Đọc tiếp</a>
+          </article>
+
+          <article class="post-card">
+            <img src="https://placehold.co/300x180" alt="thumbnail" />
+            <h3><a href="#">Unity cơ bản cho Game Developer</a></h3>
+            <p>
+              Hướng dẫn Unity từ A-Z cho người mới bắt đầu làm game indie...
+            </p>
+            <a href="#" class="read-more">Đọc tiếp</a>
+          </article>
+
+          <article class="post-card">
+            <img src="https://placehold.co/300x180" alt="thumbnail" />
+            <h3><a href="#">AI Assistant tự code bằng Python</a></h3>
+            <p>Tự làm trợ lý AI offline bằng Python + Tkinter + TTS...</p>
+            <a href="#" class="read-more">Đọc tiếp</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Sidebar -->
+      <aside>
+        <!-- Tìm kiếm -->
+        <div class="widget search">
+          <h3>Tìm kiếm</h3>
+          <form>
+            <input type="text" placeholder="Nhập từ khóa..." />
+            <button type="submit">Tìm</button>
+          </form>
+        </div>
+
+        <!-- Danh mục -->
+        <div class="widget categories">
+          <h3>Danh mục</h3>
+          <ul>
+            <li><a href="#">Lập trình Web</a></li>
+            <li><a href="#">Game Dev</a></li>
+            <li><a href="#">AI</a></li>
+            <li><a href="#">Dự án cá nhân</a></li>
+          </ul>
+        </div>
+
+        <!-- Bài viết mới -->
+        <div class="widget recent">
+          <h3>Bài viết mới</h3>
+          <ul>
+            <li><a href="#">Tạo blog cá nhân bằng HTML & CSS</a></li>
+            <li><a href="#">Top 5 công cụ AI cho Dev</a></li>
+            <li><a href="#">Kinh nghiệm làm game indie</a></li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2023 Your Shop Name. All rights reserved.</p>
+      <p>© 2025 BapCode Blog. All rights reserved.</p>
+      <p>
+        <a href="https://www.facebook.com/pham.quyen.507596/" target="_blank"
+          >Facebook</a
+        >
+        |
+        <a href="https://github.com/Bapnuong" target="_blank">GitHub</a>
+      </p>
     </footer>
   </body>
 </html>
